@@ -1,0 +1,74 @@
+.courses-page {
+    margin-top: 8vh;
+    margin-left: 2vw;
+    display: flex;
+    gap: 4vw;
+    flex-wrap: wrap;
+    width: 100%;
+    /* justify-content: center; */
+    justify-content: flex-start; 
+    /* flex-direction: row; */
+    /* position: relative; */
+}
+
+.singleCourse{
+    margin-top: 3vh;
+    width: 15vw;
+    flex-basis: calc(33.33% - 4vw);
+     /* This makes sure 3 divs fit in a row with a gap */
+
+    /* height: 50vh; */
+    height: fit-content;
+    border: 1px solid grey;
+    border-radius: 17px;
+    /* overflow: scroll; */
+}
+.test{
+    width: 50%;
+    line-height:20px;
+    text-wrap: wrap;
+}
+.singleCourseImage{
+    width: 100%;
+    height: 45%;
+}
+
+.container{
+    margin-left: -2vw;
+    /* overflow-x: hidden; */
+    width: 100%;
+    /* align-items: center; */
+    /* display: flex; */
+    /* flex-direction: column; */
+}
+.course-heading-block{
+    /* margin: inherit; */
+    /* margin-left: 4vw; */
+    width: 100%;
+    height: 20vh;
+    background-color: rgb(223, 247, 212);
+}
+.course-headingblock-text{
+    margin-left: 5vw;
+    padding: 20px;
+    margin-left: 4vw;
+    color: rgb(244, 44, 44);
+    font-size: 2.5em;
+}
+.course-card{
+    background-color: aqua;
+}
+
+@media screen and (max-width: 900px) {
+    .singleCourse {
+        flex-basis: calc(50% - 6vw); /* Adjust to 2 divs per row for medium screens */
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .singleCourse {
+        flex-basis: calc(100% - 6vw); /* Stack the divs vertically on small screens */
+    }
+}
+/* 3 line sidebar photo */
+/* background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 3…miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") */

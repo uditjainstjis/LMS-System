@@ -1,0 +1,80 @@
+.slideshow{
+    position: relative;
+    margin-left: 6%;
+    margin-top: 9%;
+    /* width: 66.2%; */
+    width: 85%;
+    height: 77%;
+    overflow: hidden;
+    /* border-radius: 20px; */
+  }
+
+.slides{
+    display: flex;
+    animation: slideAnimation 9s infinite;
+    /* width: 400px; */
+    height: 100%;
+    
+}
+  
+  .sidebar-below-text{
+    /* margin-left: 40%; */
+    text-align: center;
+    margin-top: 5%;
+  }
+  
+  .features-courses{
+    position: relative;
+    /* margin-left: 10%; */
+    width: 100%;
+    height: 80%;
+    overflow-y: hidden;
+    /* border: solid black; */
+  }
+  
+  .feature-courses-below-text{
+    margin-top: 50px;
+    text-align: center;
+    margin-top: 5%;
+  }
+  
+  .testimonials{
+    position: relative;
+    margin-left: 10%;
+    width: 80%;
+    height: 60%;
+    /* border: solid black; */
+  }
+
+  
+  .dynamic-content{
+    width: 100%;
+    height: 100vh;
+    /* background-color: yellow; */
+    overflow-y: auto ;
+    justify-content: center;
+  }
+
+@keyframes slideAnimation {
+    0% {
+      transform: translateX(0%);
+    }
+     25% {
+      transform: translateX(0%);
+    }
+    33% {
+      transform: translateX(-100%);
+    }
+    58% {
+      transform: translateX(-100%);
+    }
+    66% {
+      transform: translateX(-200%);
+    }
+    91% {
+      transform: translateX(-200%);
+    }
+    100% {
+      /* transform: translateX(-300%); */
+    } 
+  }
